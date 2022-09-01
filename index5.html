@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function displayStudentInfo(details){
+            console.log(details);
+        }
+
+        function calculateAgeAndFullName(firstName, lastName, yearOfBirth, myFunction) {
+            let age = 2022-yearOfBirth;
+            let full_name = `${firstName} ${lastName}`;
+            let detail = `Full Name = ${full_name} - Age = ${age}`;
+            myFunction(detail);
+        }
+
+        calculateAgeAndFullName('Yash','Raj',2000, displayStudentInfo);
+
+    </script>
+</body>
+
+</html>
